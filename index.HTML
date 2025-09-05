@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>for you aaida hehe 💕</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #ff9a9e, #fad0c4);
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      padding: 50px;
+      color: #333;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 30px;
+    }
+
+    button {
+      padding: 15px 25px;
+      font-size: 1.2em;
+      background-color: #ff6f91;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #ff4e7b;
+    }
+
+    #reason {
+      margin-top: 30px;
+      font-size: 1.5em;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>hey my loveeee 💖</h1>
+  <p>click the button to see why i love you (and learn something cool too!)</p>
+  <button onclick="generateLove()">why i love you 💌</button>
+
+  <div id="reason"></div>
+
+  <script>
+    const loveReasons = [
+      "you make my heart smile every single day 😊",
+      "your laugh is my favorite song 🎶",
+      "you're my best friend and my loveeee 💪",
+      "every moment with you is the greatest moment of my life ✨",
+      "you’re more beautiful than all the stars in the sky 🌟",
+      "even when you're mad, you're cute 😅",
+      "you inspire me to be the best version of myself 🌱",
+      "you light up my darkest days like sunshine ☀️",
+      "you’re my safe place 🏡",
+      "you give the best hugs in the world 🤗",
+      "you're the reason im still here darling 💞"
+    ];
+
+    const coolFacts = [
+      "Did you know? Honey never spoils. Archaeologists have found pots of honey in ancient Egyptian tombs that are over 3000 years old and still perfectly good! 🍯",
+      "Fun fact: Sea otters hold hands while they sleep so they don’t drift apart 🦦💤",
+      "Cool science: Your body has about 37.2 trillion cells! 🧬",
+      "Sweet fact: A group of flamingos is called a 'flamboyance' 🦩",
+      "Brainy bit: The human brain has more connections than there are stars in the Milky Way ✨🧠",
+      "Cute one: Penguins propose to their mates with a pebble 🐧💍",
+      "Mind-blowing: Octopuses have three hearts and blue blood 💙🐙"
+      "i love you the most in the world ✨"
+    ];
+
+    function generateLove() {
+      const love = loveReasons[Math.floor(Math.random() * loveReasons.length)];
+      const fact = coolFacts[Math.floor(Math.random() * coolFacts.length)];
+
+      const output = `<p><strong>Reason I love you:</strong><br>💗 ${love}</p>
+                      <hr>
+                      <p><strong>Cool fact of the moment:</strong><br>🧠 ${fact}</p>`;
+      
+      document.getElementById("reason").innerHTML = output;
+    }
+  </script>
+
+</body>
+</html>
